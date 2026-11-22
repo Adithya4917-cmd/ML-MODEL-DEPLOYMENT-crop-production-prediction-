@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crop Yield Predictor</title>
+<style>
+  :root {
+    --green-900: #0f3d26; --green-700: #1f6f43; --green-600: #2b8a57; --green-100: #e3f2e8; --green-50: #f2f8f4;
+    --sand: #f7f5ef; --ink: #17241c; --muted: #5d6b62; --line: #e1e6df; --white: #ffffff;
+    --red: #b42318; --red-bg: #fdecea; --amber: #9a6700; --amber-bg: #fff4d6;
+    --radius: 14px; --shadow: 0 1px 2px rgba(16,40,24,.06), 0 6px 20px rgba(16,40,24,.06);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+         background: var(--sand); color: var(--ink); line-height: 1.45; }
+
+  /* ---------- header ---------- */
+  header { background: linear-gradient(135deg, var(--green-900), var(--green-700)); color: var(--white); }
+  .hero { max-width: 1120px; margin: 0 auto; padding: 36px 24px 72px; }
+  .eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; opacity: .75; font-weight: 600; }
+  h1 { margin: 6px 0 8px; font-size: clamp(28px, 4vw, 40px); letter-spacing: -.02em; }
+  .hero p { margin: 0; max-width: 640px; opacity: .88; font-size: 16px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .chip { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.18); padding: 6px 12px;
+          border-radius: 999px; font-size: 13px; }
+  .chip b { font-weight: 700; }
+
+  /* ---------- layout ---------- */
+  main { max-width: 1120px; margin: -48px auto 0; padding: 0 24px 40px; display: grid; gap: 20px; }
+  main > *, .two > *, .grid > *, .grid-5 > * { min-width: 0; }
+  .card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .step { width: 32px; height: 32px; border-radius: 50%; background: var(--green-100); color: var(--green-700);
+          display: grid; place-items: center; font-weight: 700; flex: none; }
+  h2 { margin: 0; font-size: 19px; }
+  .sub { margin: 2px 0 0; color: var(--muted); font-size: 13.5px; }
+  .two { display: grid; grid-template-columns: 1.35fr 1fr; gap: 20px; align-items: stretch; }
+  @media (max-width: 880px) { .two { grid-template-columns: 1fr; } }
+
+  /* ---------- form ---------- */
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  @media (max-width: 640px) { .grid, .grid-5 { grid-template-columns: 1fr 1fr; } }
+  label { display: block; font-size: 12.5px; font-weight: 600; color: var(--muted); }
+  input, select { display: block; width: 100%; margin-top: 5px; padding: 10px 12px; font: inherit; font-size: 15px;
+                  color: var(--ink); background: var(--green-50); border: 1px solid var(--line); border-radius: 10px;
+                  transition: border-color .15s, box-shadow .15s; }
+  input:focus, select:focus { outline: none; border-color: var(--green-600); box-shadow: 0 0 0 3px rgba(43,138,87,.18); background: var(--white); }
+  fieldset { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px 14px; margin: 16px 0 0; }
+  legend { font-size: 12.5px; font-weight: 600; color: var(--muted); padding: 0 6px; }
+  .hint { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; font-weight: 400; }
+
+  button { font: inherit; font-weight: 600; font-size: 15px; border: 0; border-radius: 10px; padding: 11px 20px;
+           cursor: pointer; transition: background .15s, transform .05s; display: inline-flex; align-items: center; gap: 8px; }
+  button:active { transform: translateY(1px); }
+  .btn-primary { background: var(--green-700); color: var(--white); }
+  .btn-primary:hover { background: var(--green-900); }
+  .btn-ghost { background: var(--green-50); color: var(--green-700); border: 1px solid var(--line); }
+  .btn-ghost:hover { background: var(--green-100); }
+  button:disabled { opacity: .6; cursor: progress; }
+  .actions { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+  .spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.4); border-top-color: #fff;
+             border-radius: 50%; animation: spin .7s linear infinite; display: none; }
+  button.loading .spinner { display: inline-block; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ---------- result ---------- */
+  .result-card { display: flex; flex-direction: column; }
+  .empty { flex: 1; display: grid; place-items: center; text-align: center; color: var(--muted);
+           border: 2px dashed var(--line); border-radius: 12px; padding: 28px; font-size: 14px; }
+  .empty .icon { font-size: 34px; margin-bottom: 6px; }
+  .result { display: none; }
+  .result.show { display: block; }
+  .tile { background: linear-gradient(135deg, var(--green-50), var(--green-100)); border-radius: 12px; padding: 20px; }
+  .tile-label { font-size: 13px; color: var(--muted); }
+  .big { font-size: 48px; font-weight: 800; color: var(--green-700); letter-spacing: -.03em; line-height: 1.05; margin: 4px 0; }
+  .big small { font-size: 18px; font-weight: 600; color: var(--muted); }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+  .stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .stat span { display: block; font-size: 12px; color: var(--muted); }
+  .stat b { font-size: 16px; }
+  .note { font-size: 12.5px; color: var(--muted); margin-top: 12px; }
+
+  /* ---------- upload ---------- */
+  .drop { border: 2px dashed #b9d5c3; border-radius: 12px; padding: 26px; text-align: center; background: var(--green-50);
+          cursor: pointer; transition: background .15s, border-color .15s; }
+  .drop:hover, .drop.over { background: var(--green-100); border-color: var(--green-600); }
+  .drop .icon { font-size: 30px; }
+  .drop strong { color: var(--green-700); }
+  .drop input { display: none; }
+  .file-name { margin-top: 8px; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+  code.cols { display: block; font-size: 12px; background: var(--sand); padding: 8px 10px; border-radius: 8px;
+              color: var(--muted); margin-top: 10px; white-space: normal; word-break: break-word; }
+
+  /* ---------- messages ---------- */
+  .msg { margin-top: 14px; padding: 10px 14px; border-radius: 10px; font-size: 14px; display: none; }
+  .msg.show { display: block; }
+  .msg.ok { background: var(--green-100); color: var(--green-900); }
+  .msg.err { background: var(--red-bg); color: var(--red); }
+  .msg.warn { background: var(--amber-bg); color: var(--amber); }
+
+  /* ---------- tables ---------- */
+  .table-wrap { margin-top: 14px; max-height: 360px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { position: sticky; top: 0; background: var(--green-50); color: var(--muted); font-size: 12px;
+       text-transform: uppercase; letter-spacing: .04em; z-index: 1; }
+  tbody tr:hover { background: #fafcfa; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  th.num { text-align: right; }
+  .badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .badge.form { background: var(--green-100); color: var(--green-700); }
+  .badge.csv { background: #e6eefc; color: #1d4ed8; }
+  .history-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .count { font-size: 13px; color: var(--muted); }
+
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; padding: 8px 24px 32px; }
+  footer a { color: var(--green-700); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <div class="eyebrow">Machine learning · FastAPI</div>
+    <h1>🌾 Crop Yield Predictor</h1>
+    <p>Estimate how many tonnes per hectare a crop will yield, from the country, crop, year, harvested area and temperature change.</p>
+    <div class="chips">
+      <span class="chip">Model: <b>Random Forest</b></span>
+      <span class="chip">Countries: <b id="nCountries">–</b></span>
+      <span class="chip">Crops: <b id="nCrops">–</b></span>
+      <span class="chip">Data: <b>FAOSTAT 1961–2024</b></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ========== 1. Single prediction ========== -->
+  <div class="two">
+    <section class="card">
+      <div class="card-head">
+        <div class="step">1</div>
+        <div><h2>Single prediction</h2><p class="sub">Choose a country and crop, then predict.</p></div>
+      </div>
+      <form id="form">
+        <div class="grid">
+          <label>Country <select id="country" required></select></label>
+          <label>Crop <select id="crop" required></select></label>
+          <label>Year <input id="year" type="number" value="2025" min="1961" max="2050" required></label>
+          <label>Area harvested (hectares)
+            <input id="area_harvested_ha" type="number" value="47000000" min="1" step="any" required>
+          </label>
+        </div>
+        <p class="hint">Use a realistic area for the crop. The model uses area as a clue (e.g. India rice ≈ 47,000,000 ha).</p>
+        <fieldset>
+          <legend>Temperature change vs 1951–1980 (°C)</legend>
+          <div class="grid-5">
+            <label>Annual <input id="temp_change_annual_c" type="number" step="any" value="1.2" required></label>
+            <label>Dec–Feb <input id="temp_change_djf_c" type="number" step="any" value="1.0" required></label>
+            <label>Mar–May <input id="temp_change_mam_c" type="number" step="any" value="1.3" required></label>
+            <label>Jun–Aug <input id="temp_change_jja_c" type="number" step="any" value="1.0" required></label>
+            <label>Sep–Nov <input id="temp_change_son_c" type="number" step="any" value="1.2" required></label>
+          </div>
+        </fieldset>
+        <div class="actions">
+          <button type="submit" id="predictBtn" class="btn-primary"><span class="spinner"></span>Predict yield</button>
+        </div>
+      </form>
+      <div id="predictMsg" class="msg"></div>
+    </section>
+
+    <section class="card result-card">
+      <div class="card-head">
+        <div class="step">✓</div>
+        <div><h2>Result</h2><p class="sub">Saved to the database automatically.</p></div>
+      </div>
+      <div id="empty" class="empty">
+        <div><div class="icon">🌱</div>Fill in the form and press <b>Predict yield</b>.</div>
+      </div>
+      <div id="result" class="result">
+        <div class="tile">
+          <div class="tile-label" id="rTitle"></div>
+          <div class="big"><span id="rYield">–</span> <small>t/ha</small></div>
+          <div class="tile-label">predicted yield (tonnes per hectare)</div>
+        </div>
+        <div class="stats">
+          <div class="stat"><span>Estimated production</span><b id="rProd">–</b></div>
+          <div class="stat"><span>Area used</span><b id="rArea">–</b></div>
+        </div>
+        <p class="note">Estimate from a Random Forest model trained on past FAOSTAT data. Less reliable for small specialty crops and years far in the future.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========== 2. CSV upload ========== -->
+  <section class="card">
+    <div class="card-head">
+      <div class="step">2</div>
+      <div><h2>Upload a CSV</h2><p class="sub">Predict many rows at once. Every predicted row is saved to the database.</p></div>
+    </div>
+    <label class="drop" id="drop">
+      <input type="file" id="csvFile" accept=".csv">
+      <div class="icon">📄</div>
+      <div><strong>Click to choose a CSV</strong> or drag it here</div>
+      <div class="file-name" id="fileName"></div>
+    </label>
+    <code class="cols">Required columns: country, crop, year, area_harvested_ha, temp_change_annual_c, temp_change_djf_c, temp_change_mam_c, temp_change_jja_c, temp_change_son_c</code>
+    <div class="actions">
+      <button id="uploadBtn" class="btn-primary"><span class="spinner"></span>Upload &amp; predict</button>
+      <button id="sampleBtn" class="btn-ghost" type="button">⬇ Download sample CSV</button>
+    </div>
+    <div id="uploadMsg" class="msg"></div>
+    <div id="uploadErrors" class="msg warn"></div>
+    <div id="uploadTable"></div>
+  </section>
+
+  <!-- ========== 3. History ========== -->
+  <section class="card">
+    <div class="history-head">
+      <div class="card-head" style="margin:0">
+        <div class="step">3</div>
+        <div><h2>Prediction history</h2><p class="sub">Read from the SQLite database.</p></div>
+      </div>
+      <div style="display:flex; gap:10px; align-items:center">
+        <span class="count" id="historyCount"></span>
+        <button id="refreshBtn" class="btn-ghost" type="button">↻ Refresh</button>
+      </div>
+    </div>
+    <div id="historyTable"></div>
+  </section>
+</main>
+
+<footer>Crop Yield Predictor · FastAPI + scikit-learn · <a href="/docs">API docs</a></footer>
+
+<script>
+const FIELDS = ["year", "area_harvested_ha", "temp_change_annual_c", "temp_change_djf_c",
+                "temp_change_mam_c", "temp_change_jja_c", "temp_change_son_c"];
+const $ = (id) => document.getElementById(id);
+const fmt = (n, d = 0) => Number(n).toLocaleString("en-IN", { maximumFractionDigits: d });
+
+function show(el, text, kind) {
+  el.className = `msg show ${kind}`;
+  el.innerHTML = text;
+}
+function hide(el) { el.className = el.className.replace(" show", ""); el.innerHTML = ""; }
+function busy(btn, on) { btn.disabled = on; btn.classList.toggle("loading", on); }
+
+// turn an API error into readable text
+async function readError(res) {
+  const body = await res.json().catch(() => ({}));
+  if (Array.isArray(body.detail)) return body.detail.map(d => `${d.loc.at(-1)}: ${d.msg}`).join(", ");
+  return body.detail || `Error ${res.status}`;
+}
+
+// build an HTML table from a list of objects
+function makeTable(rows, cols) {
+  if (!rows.length) return "<p class='hint' style='margin-top:14px'>No rows yet.</p>";
+  const head = cols.map(c => `<th class="${c.num ? "num" : ""}">${c.label}</th>`).join("");
+  const body = rows.map(r => "<tr>" + cols.map(c => {
+    let v = r[c.key];
+    if (c.key === "source") v = `<span class="badge ${v}">${v}</span>`;
+    else if (c.num && v != null) v = fmt(v, c.dec ?? 0);
+    return `<td class="${c.num ? "num" : ""}">${v ?? ""}</td>`;
+  }).join("") + "</tr>").join("");
+  return `<div class="table-wrap"><table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+
+// ---------- fill dropdowns from /options ----------
+async function loadOptions() {
+  const res = await fetch("/options");
+  const data = await res.json();
+  $("country").innerHTML = data.countries.map(c => `<option>${c}</option>`).join("");
+  $("crop").innerHTML = data.crops.map(c => `<option>${c}</option>`).join("");
+  if (data.countries.includes("India")) $("country").value = "India";
+  if (data.crops.includes("Rice")) $("crop").value = "Rice";
+  $("nCountries").textContent = data.countries.length;
+  $("nCrops").textContent = data.crops.length;
+}
+
+// ---------- 1. single prediction ----------
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  hide($("predictMsg"));
+  const body = { country: $("country").value, crop: $("crop").value };
+  FIELDS.forEach(f => body[f] = Number($(f).value));
+
+  busy($("predictBtn"), true);
+  const res = await fetch("/predict", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  busy($("predictBtn"), false);
+
+  if (!res.ok) { show($("predictMsg"), await readError(res), "err"); return; }
+  const r = await res.json();
+  $("empty").style.display = "none";
+  $("result").classList.add("show");
+  $("rTitle").textContent = `${r.crop} · ${r.country} · ${r.year}`;
+  $("rYield").textContent = fmt(r.predicted_yield_t_ha, 2);
+  $("rProd").textContent = `${fmt(r.estimated_production_t)} t`;
+  $("rArea").textContent = `${fmt(r.area_harvested_ha)} ha`;
+  loadHistory();
+});
+
+// ---------- 2. CSV upload ----------
+$("csvFile").addEventListener("change", () => {
+  const f = $("csvFile").files[0];
+  $("fileName").textContent = f ? `Selected: ${f.name}` : "";
+});
+["dragover", "dragenter"].forEach(ev => $("drop").addEventListener(ev, e => { e.preventDefault(); $("drop").classList.add("over"); }));
+["dragleave", "drop"].forEach(ev => $("drop").addEventListener(ev, e => { e.preventDefault(); $("drop").classList.remove("over"); }));
+$("drop").addEventListener("drop", (e) => {
+  if (e.dataTransfer.files.length) {
+    $("csvFile").files = e.dataTransfer.files;
+    $("fileName").textContent = `Selected: ${e.dataTransfer.files[0].name}`;
+  }
+});
+
+$("uploadBtn").addEventListener("click", async () => {
+  hide($("uploadMsg")); hide($("uploadErrors"));
+  const file = $("csvFile").files[0];
+  if (!file) { show($("uploadMsg"), "Choose a CSV file first.", "err"); return; }
+
+  const formData = new FormData();
+  formData.append("file", file);
+
+  busy($("uploadBtn"), true);
+  const res = await fetch("/upload-csv", { method: "POST", body: formData });
+  busy($("uploadBtn"), false);
+
+  if (!res.ok) { show($("uploadMsg"), await readError(res), "err"); $("uploadTable").innerHTML = ""; return; }
+  const d = await res.json();
+  show($("uploadMsg"), `<b>${d.filename}</b>: ${d.predicted_rows} of ${d.total_rows} rows predicted and saved (upload #${d.upload_id}).`, "ok");
+  if (d.errors.length) show($("uploadErrors"),
+      "Skipped rows: " + d.errors.map(e => `line ${e.row} (${e.problem})`).join(", "), "warn");
+  $("uploadTable").innerHTML = makeTable(d.results, [
+    { key: "country", label: "Country" }, { key: "crop", label: "Crop" }, { key: "year", label: "Year" },
+    { key: "area_harvested_ha", label: "Area (ha)", num: true },
+    { key: "predicted_yield_t_ha", label: "Yield (t/ha)", num: true, dec: 3 },
+    { key: "estimated_production_t", label: "Production (t)", num: true },
+  ]);
+  loadHistory();
+});
+
+// sample CSV made in the browser, so there is nothing extra on the server
+$("sampleBtn").addEventListener("click", () => {
+  const csv = "country,crop,year,area_harvested_ha,temp_change_annual_c,temp_change_djf_c,temp_change_mam_c,temp_change_jja_c,temp_change_son_c\n" +
+              "India,Rice,2024,47000000,1.0,1.0,1.0,0.8,1.1\n" +
+              "India,Wheat,2024,31800000,1.0,1.0,1.0,0.8,1.1\n" +
+              "China,Maize (corn),2024,44700000,2.3,1.7,2.7,2.1,2.6\n" +
+              "China,Potatoes,2024,4300000,2.3,1.7,2.7,2.1,2.6\n";
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+  a.download = "sample_input.csv";
+  a.click();
+});
+
+// ---------- 3. history ----------
+async function loadHistory() {
+  const res = await fetch("/history?limit=100");
+  const rows = await res.json();
+  $("historyCount").textContent = rows.length ? `${rows.length} most recent` : "";
+  $("historyTable").innerHTML = makeTable(rows, [
+    { key: "id", label: "#" }, { key: "created_at", label: "Time" }, { key: "source", label: "Source" },
+    { key: "country", label: "Country" }, { key: "crop", label: "Crop" }, { key: "year", label: "Year" },
+    { key: "area_harvested_ha", label: "Area (ha)", num: true },
+    { key: "predicted_yield_t_ha", label: "Yield (t/ha)", num: true, dec: 3 },
+  ]);
+}
+$("refreshBtn").addEventListener("click", loadHistory);
+
+loadOptions();
+loadHistory();
+</script>
+</body>
+</html>

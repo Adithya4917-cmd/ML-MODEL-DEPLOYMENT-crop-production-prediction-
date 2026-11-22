@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+numpy
+joblib
+scikit-learn==1.9.0
+pytest
+httpx
+
+
+syntax to deploy  the ml model 
+    python -m uvicorn src.app:app --reload  (in vs code terminal)
+    ngrok http 8000 --url https://unaired-molasses-seismic.ngrok-free.dev
+
+    open the link below 
+    https://unaired-molasses-seismic.ngrok-free.dev/
