@@ -1,0 +1,416 @@
+customer_id,age,gender,city,membership_type,price,workout_days_per_week,personal_trainer,referral_signup,membership_months,satisfaction_score,renewed
+1,,male,hyderabad,Premium,₹2360,5.0,,No,24.0,1.6,Yes
+2,-34.0,Male,  Delhi,Premium,"5,926",1.0,1,no,3.0,3.9,yes
+3,,M,Chennai,Standard,Rs 78,2.0,N,No,12.0,3.4,Yes
+4,59.0,male,Hyderabad,Standard ,₹4404,4.0,1,No,3.0,1.2,
+5,31.0,female,Mumbai ,Premium,₹76,5.0,no,Y,6.0,2.5,
+6,18.0,male,Pune,Standard ,Rs 5056,2.0,N,N,3.0,4.8,yes
+7,29.0,Female,Mumbai ,Standard ,Rs 23,1.0,yes,0,12.0,2.0,0
+8,22.0,female,Hyderabad,Premium,4056,2.0,1,Y,1.0,,1
+9,51.0,,Chennai,Standard ,18,3.0,yes,no,,3.2,1
+10,44.0,Other,BANGALORE,Premium,Rs 76,4.0,,0,,1.8,Yes
+11,55.0,M,Chennai,PREMIUM,$67,3.0,0,,12.0,3.4,1
+12,,Female,  Delhi,Gold,3562,1.0,No,Y,1.0,4.1,no
+13,-59.0,male,  Delhi,Gold,₹4195,2.0,Y,,6.0,4.2,No
+14,20.0,Male,Mumbai ,Standard,₹55,6.0,N,Y,12.0,2.3,No
+15,63.0,Female,Pune,Gold,76,5.0,yes,yes,12.0,3.6,1
+16,42.0,Other,hyderabad,PREMIUM,Rs 3070,2.0,Y,1,,4.4,0
+17,20.0,,Mumbai,Premium,2002,1.0,Yes,,3.0,1.1,No
+18,-28.0,Male,hyderabad,Basic,2363,4.0,No,,,1.6,0
+19,54.0,,hyderabad,Gold,$3178,2.0,no,No,6.0,3.8,no
+20,43.0,Male,Mumbai,Basic,4125,3.0,No,no,24.0,4.5,1
+21,43.0,male,Pune,Premium,₹44,4.0,0,,3.0,1.5,0
+22,40.0,Female,hyderabad,Premium,$4802,3.0,no,1,6.0,2.7,No
+23,28.0,male,Pune,Standard,"2,782",4.0,0,yes,1.0,1.5,No
+24,59.0,Male,BANGALORE,Basic,,2.0,0,,6.0,2.3,1
+25,47.0,Female,Delhi,Basic,Rs 2995,1.0,1,No,3.0,4.8,1
+26,54.0,Female,Chennai,Standard ,"4,957",2.0,N,Y,1.0,2.1,0
+27,17.0,M,Bangalore,basic,₹2354,5.0,Yes,0,24.0,3.0,1
+28,47.0,F,  Delhi,Standard,3233,5.0,No,no,6.0,2.5,No
+29,32.0,male,Mumbai ,Gold,₹52,4.0,,Y,3.0,3.5,Yes
+30,26.0,Female,Mumbai,Standard ,5082,2.0,Y,no,6.0,1.7,No
+31,44.0,,Bangalore,Gold,,6.0,1,Y,12.0,,yes
+32,51.0,male,Delhi,Standard ,$33,4.0,,Yes,12.0,4.8,0
+33,55.0,female,Mumbai ,PREMIUM,Rs 3885,3.0,Yes,Y,1.0,1.8,
+34,,female,hyderabad,Standard ,₹5561,2.0,N,,3.0,4.9,no
+35,64.0,F,Delhi,Gold,$15,,Yes,yes,24.0,4.6,yes
+36,24.0,F,Bangalore,Premium,₹33,6.0,1,Yes,12.0,4.5,No
+37,48.0,female,Bangalore,Gold,Rs 50,5.0,no,Yes,,1.0,no
+38,40.0,male,BANGALORE,Standard ,"1,598",3.0,N,Yes,,3.2,yes
+39,50.0,male,Hyderabad,Basic,5291,2.0,N,1,12.0,1.9,1
+40,36.0,F,Bangalore,Basic,₹5487,5.0,,,1.0,3.2,0
+41,37.0,Other,Mumbai,Standard ,36,4.0,N,No,,2.6,yes
+42,23.0,female,Chennai,Standard ,Rs 41,3.0,no,1,1.0,3.3,no
+43,48.0,male,Chennai,PREMIUM,75,3.0,Y,no,6.0,4.1,1
+44,32.0,,Pune,Standard ,$2743,3.0,yes,No,,2.5,0
+45,56.0,F,Bangalore,Premium,Rs 2560,3.0,Yes,Yes,24.0,3.3,no
+46,48.0,,Chennai,Standard ,$2639,3.0,0,1,1.0,2.3,0
+47,33.0,Female,Chennai,Premium,68,7.0,0,Yes,,1.4,
+48,47.0,,  Delhi,PREMIUM,$37,3.0,,1,3.0,4.5,1
+49,32.0,,Pune,Standard,4675,5.0,,0,24.0,2.2,yes
+50,41.0,F,Bangalore,Standard,39,7.0,No,yes,3.0,1.0,no
+51,51.0,Female,Chennai,basic,$79,5.0,1,Yes,,4.6,no
+52,38.0,Male,Mumbai ,basic,2666,5.0,Y,1,6.0,2.9,
+53,37.0,F,Pune,Premium,$56,3.0,Yes,1,6.0,1.5,0
+54,48.0,,Delhi,PREMIUM,$74,,Yes,No,12.0,4.4,No
+55,47.0,male,Chennai,Standard,69,5.0,N,1,24.0,4.9,
+56,57.0,,Hyderabad,Standard ,3193,3.0,no,No,6.0,2.8,0
+57,,F,hyderabad,Gold,,1.0,yes,no,24.0,1.3,0
+58,24.0,,Bangalore,Gold,15,7.0,No,yes,3.0,2.0,Yes
+59,63.0,Other,Chennai,Standard ,15,4.0,no,No,24.0,3.4,yes
+60,18.0,Female,Mumbai ,Gold,,2.0,,1,6.0,4.0,Yes
+61,44.0,Other,Pune,Basic,5545,3.0,0,yes,,3.8,0
+62,27.0,,Pune,basic,"4,459",4.0,Y,N,1.0,2.9,
+63,52.0,,hyderabad,Gold,24,4.0,1,N,3.0,,
+64,46.0,female,Bangalore,Standard,72,6.0,Y,,24.0,,No
+65,60.0,,  Delhi,Gold,$38,4.0,0,0,1.0,4.5,Yes
+66,47.0,F,Bangalore,Standard ,$38,3.0,,,12.0,1.5,0
+67,58.0,,Bangalore,Standard,₹57,3.0,no,N,12.0,1.4,1
+68,17.0,F,hyderabad,Standard ,"4,046",1.0,,Y,24.0,4.4,
+69,41.0,M,Bangalore,Basic,Rs 4569,3.0,Y,Yes,12.0,3.8,1
+70,60.0,,Mumbai,Gold,,7.0,Y,0,12.0,2.7,yes
+71,51.0,,Mumbai,Gold,$38,4.0,No,Yes,6.0,2.7,
+72,33.0,F,Mumbai,PREMIUM,"3,643",7.0,no,,24.0,2.0,no
+73,28.0,Other,Bangalore,PREMIUM,"3,826",4.0,No,no,12.0,4.3,yes
+74,37.0,M,  Delhi,Basic,$5992,3.0,0,0,12.0,4.8,No
+75,34.0,,Mumbai,Standard ,5671,,no,1,12.0,3.3,No
+76,62.0,M,Mumbai,Basic,1643,4.0,Y,0,24.0,4.0,0
+77,38.0,male,  Delhi,PREMIUM,₹2667,1.0,Yes,1,3.0,4.9,1
+78,29.0,Male,Bangalore,PREMIUM,,4.0,yes,0,24.0,3.9,no
+79,44.0,Other,Pune,Basic,$5830,2.0,N,N,3.0,4.3,
+80,32.0,,Bangalore,Standard ,21,5.0,Yes,0,3.0,2.6,yes
+81,42.0,Other,  Delhi,Gold,"4,181",1.0,0,1,6.0,,1
+82,23.0,,Hyderabad,Premium,Rs 79,6.0,Y,0,1.0,3.4,no
+83,51.0,F,Delhi,Standard,"4,641",5.0,1,No,,3.8,
+84,25.0,Female,Delhi,basic,53,4.0,,Y,24.0,2.6,no
+85,35.0,M,Chennai,Premium,"1,955",4.0,yes,No,1.0,3.7,
+86,43.0,male,Hyderabad,Standard,77,3.0,0,yes,1.0,1.9,no
+87,21.0,Other,Pune,Standard,Rs 3605,,1,no,24.0,2.3,no
+88,31.0,Other,Chennai,Standard ,Rs 4433,5.0,0,Yes,1.0,3.1,1
+89,56.0,,Mumbai,PREMIUM,₹4876,4.0,yes,1,24.0,3.8,No
+90,18.0,male,BANGALORE,PREMIUM,₹4203,3.0,N,,,2.8,yes
+91,43.0,,  Delhi,Basic,Rs 22,2.0,Y,no,3.0,2.6,no
+92,43.0,Female,Pune,Premium,₹55,,Yes,N,,1.1,yes
+93,24.0,F,  Delhi,basic,Rs 4008,7.0,yes,yes,24.0,,
+94,21.0,,Mumbai ,Premium,1755,3.0,0,Y,,4.5,
+95,60.0,M,Mumbai,basic,47,6.0,Y,1,1.0,2.5,no
+96,41.0,Other,Pune,Basic,"5,658",4.0,N,Y,1.0,2.9,yes
+97,-50.0,Other,Bangalore,Basic,₹2010,1.0,0,Y,,3.8,No
+98,20.0,F,Mumbai ,Standard,Rs 3168,4.0,No,Yes,24.0,4.8,no
+99,25.0,M,Mumbai,Standard,$5678,4.0,yes,no,,2.0,1
+100,60.0,male,Delhi,Standard,$18,6.0,Y,N,3.0,2.4,no
+101,23.0,F,Chennai,Gold,40,4.0,No,1,,,1
+102,18.0,male,Mumbai ,basic,64,6.0,No,no,12.0,3.2,1
+103,45.0,F,Mumbai,Standard ,31,4.0,1,No,24.0,3.5,Yes
+104,17.0,Female,hyderabad,PREMIUM,$3622,2.0,N,,12.0,4.9,0
+105,49.0,Female,Pune,PREMIUM,2858,5.0,Yes,N,1.0,3.1,no
+106,39.0,Female,BANGALORE,PREMIUM,2858,4.0,Yes,1,1.0,4.8,Yes
+107,19.0,Female,hyderabad,Standard ,₹1637,4.0,Yes,N,12.0,1.3,No
+108,20.0,F,Mumbai ,Premium,Rs 4093,3.0,N,yes,,3.5,1
+109,-63.0,M,Delhi,PREMIUM,Rs 5542,4.0,No,Yes,6.0,1.6,yes
+110,23.0,female,Hyderabad,Premium,Rs 18,3.0,1,,6.0,3.1,Yes
+111,47.0,Female,Pune,PREMIUM,75,2.0,Yes,,24.0,1.7,0
+112,43.0,,Chennai,basic,$5400,4.0,0,No,24.0,2.8,yes
+113,41.0,male,Mumbai ,Standard ,4617,4.0,1,,24.0,2.3,1
+114,41.0,Female,  Delhi,Standard ,$3796,5.0,0,no,,1.6,
+115,63.0,Female,BANGALORE,basic,40,6.0,N,yes,1.0,3.4,no
+116,30.0,Female,Chennai,Basic,70,2.0,yes,,12.0,,1
+117,38.0,Other,BANGALORE,Gold,$3625,1.0,Yes,Y,6.0,2.0,yes
+118,22.0,M,Pune,Premium,37,5.0,,N,12.0,1.4,yes
+119,53.0,Male,Mumbai ,Standard ,29,3.0,Yes,yes,24.0,1.7,
+120,54.0,Male,Delhi,Gold,$3476,1.0,No,yes,,1.5,Yes
+121,32.0,Other,Chennai,basic,39,3.0,Y,N,1.0,3.0,1
+122,62.0,M,Delhi,Gold,₹5706,5.0,Y,0,1.0,3.3,no
+123,57.0,F,  Delhi,Basic,₹20,4.0,Y,0,3.0,2.0,yes
+124,60.0,Male,Hyderabad,Premium,Rs 5312,2.0,yes,Y,,2.5,Yes
+125,-63.0,M,Delhi,basic,Rs 76,6.0,,,1.0,1.3,
+126,46.0,Male,Chennai,Basic,₹50,2.0,N,1,3.0,3.3,0
+127,26.0,Other,Hyderabad,Standard,20,3.0,0,N,,3.7,
+128,17.0,Other,  Delhi,Basic,22,3.0,N,no,12.0,1.8,No
+129,41.0,F,BANGALORE,Standard,Rs 33,4.0,no,No,1.0,3.1,No
+130,16.0,Female,Delhi,Gold,$5915,4.0,0,N,12.0,2.3,0
+131,18.0,,Pune,Standard ,20,4.0,Yes,N,24.0,1.3,yes
+132,,female,Bangalore,Basic,₹54,1.0,,1,24.0,1.0,1
+133,24.0,Male,Pune,Gold,Rs 29,4.0,N,0,6.0,2.4,Yes
+134,64.0,female,Mumbai,PREMIUM,₹76,,no,0,,4.7,1
+135,26.0,female,Bangalore,basic,4135,5.0,Yes,N,,,Yes
+136,44.0,male,Mumbai ,Gold,₹28,2.0,yes,N,24.0,1.7,0
+137,34.0,Female,Bangalore,PREMIUM,40,3.0,yes,,24.0,3.4,0
+138,33.0,female,Bangalore,Premium,53,3.0,0,no,6.0,3.5,No
+139,48.0,Female,  Delhi,Gold,"3,690",6.0,Yes,N,3.0,3.2,1
+140,55.0,M,Delhi,Gold,"3,651",2.0,yes,0,,,yes
+141,18.0,,Mumbai ,Standard,$56,2.0,no,,24.0,3.0,
+142,45.0,F,BANGALORE,Standard ,$41,,0,Y,1.0,2.2,1
+143,52.0,F,Mumbai ,Premium,₹47,2.0,0,N,3.0,4.0,Yes
+144,25.0,Female,Bangalore,Basic,4412,2.0,0,,12.0,2.8,no
+145,30.0,,BANGALORE,Basic,$4728,4.0,,N,12.0,3.9,Yes
+146,,Female,BANGALORE,Gold,₹50,5.0,Y,0,6.0,2.4,No
+147,26.0,Male,Mumbai,Basic,Rs 52,3.0,,,3.0,4.8,
+148,27.0,Male,hyderabad,basic,27,4.0,0,No,1.0,2.0,no
+149,,F,Delhi,Standard,57,2.0,N,no,12.0,4.2,No
+150,52.0,female,Mumbai,PREMIUM,45,1.0,,Yes,6.0,3.9,no
+151,55.0,female,Bangalore,Standard ,,6.0,No,N,6.0,2.8,0
+152,61.0,female,Delhi,Basic,50,6.0,yes,0,1.0,4.5,no
+153,55.0,Female,Pune,Basic,₹4208,5.0,no,Yes,3.0,4.2,yes
+154,41.0,,Bangalore,Basic,Rs 39,7.0,Y,N,3.0,2.9,Yes
+155,42.0,Female,BANGALORE,basic,$31,2.0,1,N,12.0,4.7,no
+156,39.0,male,Mumbai,Standard ,$66,1.0,yes,,1.0,2.4,Yes
+157,58.0,male,Pune,PREMIUM,Rs 42,5.0,0,N,1.0,4.8,0
+158,64.0,Other,Bangalore,Standard ,₹5743,2.0,No,1,1.0,2.2,
+159,45.0,Male,Delhi,Gold,$3762,5.0,Yes,yes,,,
+160,47.0,Male,Mumbai ,Premium,4217,1.0,N,0,,4.3,1
+161,34.0,female,Bangalore,Premium,₹15,5.0,yes,0,3.0,3.1,1
+162,43.0,,hyderabad,PREMIUM,$3661,2.0,no,No,1.0,2.3,Yes
+163,54.0,,Mumbai,Gold,48,6.0,N,No,12.0,4.4,yes
+164,22.0,M,BANGALORE,PREMIUM,Rs 4579,2.0,yes,no,6.0,3.0,Yes
+165,23.0,,  Delhi,Premium,₹4810,4.0,No,Y,3.0,4.2,0
+166,39.0,Other,Mumbai ,Basic,2811,,No,0,12.0,3.7,1
+167,36.0,M,Delhi,basic,₹62,1.0,No,,1.0,1.8,No
+168,34.0,F,BANGALORE,PREMIUM,₹33,4.0,Y,no,3.0,4.6,1
+169,62.0,Female,  Delhi,Standard ,"5,094",4.0,yes,yes,12.0,4.3,0
+170,52.0,Male,Hyderabad,Basic,,3.0,Y,no,,2.5,no
+171,,male,Bangalore,basic,$5077,6.0,Y,0,6.0,,Yes
+172,61.0,,hyderabad,Standard,5723,4.0,N,N,24.0,2.6,No
+173,24.0,Female,BANGALORE,Premium,18,4.0,0,no,24.0,3.8,Yes
+174,52.0,Other,hyderabad,Gold,32,2.0,N,no,12.0,3.0,no
+175,49.0,male,Pune,Basic,$3122,3.0,,0,6.0,3.4,No
+176,,male,Pune,PREMIUM,$1954,6.0,Y,,24.0,,Yes
+177,43.0,female,Chennai,Standard,,5.0,Yes,,,1.2,1
+178,58.0,,  Delhi,Standard,"5,276",4.0,No,yes,3.0,1.3,no
+179,26.0,female,Delhi,Premium,$3558,5.0,,Yes,6.0,,No
+180,49.0,,Delhi,PREMIUM,Rs 38,2.0,N,N,1.0,2.1,1
+181,62.0,female,  Delhi,Gold,$3262,4.0,Y,0,3.0,3.5,yes
+182,17.0,Other,Mumbai ,Standard,₹3024,3.0,0,Y,24.0,3.8,
+183,57.0,F,Hyderabad,PREMIUM,"5,620",6.0,1,yes,24.0,1.0,No
+184,45.0,Female,hyderabad,Basic,$5697,3.0,yes,1,6.0,4.7,no
+185,32.0,,Hyderabad,Standard ,Rs 1829,4.0,,N,12.0,3.2,no
+186,39.0,M,Pune,PREMIUM,1838,6.0,Y,0,24.0,3.8,No
+187,21.0,male,Bangalore,Standard ,$73,1.0,N,0,3.0,1.2,
+188,25.0,Other,Chennai,Gold,Rs 37,4.0,Y,Yes,3.0,2.3,0
+189,30.0,male,Pune,Premium,"2,128",2.0,Y,,3.0,2.7,No
+190,44.0,F,hyderabad,Basic,"4,794",3.0,no,no,3.0,,no
+191,54.0,M,Hyderabad,PREMIUM,Rs 2682,4.0,1,0,24.0,1.3,No
+192,52.0,male,Hyderabad,Gold,"4,483",1.0,no,,1.0,3.2,
+193,37.0,M,Chennai,Gold,₹27,4.0,1,0,24.0,3.5,0
+194,17.0,Male,Hyderabad,Standard,₹56,1.0,N,Y,24.0,3.1,0
+195,47.0,M,  Delhi,basic,₹53,3.0,N,yes,,1.4,0
+196,59.0,female,Bangalore,PREMIUM,Rs 70,,yes,1,3.0,1.4,1
+197,54.0,Female,Delhi,Premium,Rs 5935,2.0,Yes,Y,6.0,2.9,no
+198,45.0,male,Mumbai ,Standard ,32,4.0,N,no,1.0,,Yes
+199,61.0,male,Mumbai,Standard ,4132,3.0,N,no,12.0,1.9,No
+200,52.0,female,Chennai,Standard ,$57,3.0,,no,,3.4,0
+201,28.0,Female,  Delhi,basic,71,1.0,No,No,3.0,,1
+202,18.0,M,Delhi,Standard,$5345,4.0,No,no,1.0,3.1,no
+203,35.0,Male,Pune,Premium,$3413,3.0,Yes,,3.0,3.0,
+204,,male,Hyderabad,Standard ,₹1502,2.0,Yes,1,24.0,3.1,Yes
+205,24.0,Female,Pune,Basic,Rs 3433,3.0,yes,1,6.0,1.5,no
+206,24.0,Other,Chennai,Basic,39,6.0,yes,N,1.0,2.3,1
+207,40.0,F,Hyderabad,Gold,,4.0,Y,0,6.0,2.1,1
+208,30.0,F,hyderabad,basic,19,4.0,no,No,,,0
+209,52.0,Male,hyderabad,Premium,"4,887",6.0,Yes,0,24.0,4.4,0
+210,55.0,Male,Chennai,basic,Rs 2824,7.0,Yes,yes,6.0,2.4,yes
+211,49.0,female,Mumbai ,PREMIUM,47,4.0,no,Y,12.0,4.4,0
+212,63.0,male,Hyderabad,PREMIUM,Rs 3204,2.0,1,,24.0,3.7,yes
+213,42.0,female,Chennai,basic,$3969,6.0,yes,,24.0,4.5,
+214,46.0,M,Pune,Basic,$67,7.0,,,3.0,4.3,No
+215,29.0,Female,Pune,Gold,"2,088",2.0,no,Yes,24.0,3.5,0
+216,,Female,hyderabad,Gold,74,4.0,no,0,6.0,1.5,yes
+217,34.0,F,hyderabad,Standard ,$77,4.0,no,no,,4.0,No
+218,37.0,Other,Pune,PREMIUM,3387,5.0,Y,N,1.0,3.3,no
+219,16.0,,BANGALORE,Premium,$64,,Yes,no,24.0,2.8,Yes
+220,50.0,Other,Bangalore,Premium,Rs 3928,1.0,1,no,,2.5,0
+221,47.0,,Pune,basic,4494,3.0,yes,yes,,2.9,no
+222,19.0,Male,  Delhi,Basic,₹1538,6.0,Yes,Yes,6.0,1.9,
+223,17.0,M,Hyderabad,Premium,4655,3.0,Yes,0,1.0,4.9,Yes
+224,-43.0,Male,Hyderabad,PREMIUM,"2,488",3.0,Y,Yes,6.0,4.9,0
+225,34.0,M,Mumbai,Basic,Rs 5463,5.0,no,,6.0,1.1,yes
+226,40.0,female,Chennai,basic,Rs 26,6.0,Y,No,6.0,4.9,
+227,,Other,Chennai,basic,₹2484,5.0,Yes,yes,6.0,4.4,
+228,22.0,Female,  Delhi,Basic,78,1.0,0,Y,12.0,,Yes
+229,18.0,Male,Delhi,Gold,Rs 39,2.0,yes,1,1.0,3.4,yes
+230,35.0,Other,  Delhi,Standard,Rs 23,2.0,No,,12.0,1.3,yes
+231,17.0,Female,BANGALORE,PREMIUM,25,4.0,1,N,24.0,,yes
+232,33.0,F,BANGALORE,PREMIUM,$78,4.0,yes,1,,2.2,1
+233,60.0,Female,Mumbai,Standard,Rs 47,5.0,1,N,6.0,2.9,Yes
+234,-39.0,female,Bangalore,Basic,Rs 31,,1,0,,3.5,1
+235,,female,  Delhi,Basic,54,7.0,1,Yes,1.0,3.1,no
+236,48.0,F,Mumbai ,PREMIUM,$5544,6.0,yes,yes,3.0,2.6,yes
+237,17.0,Other,Bangalore,basic,₹60,6.0,N,Y,3.0,1.2,0
+238,59.0,F,Pune,Basic,₹3395,6.0,1,N,1.0,4.7,no
+239,54.0,female,Chennai,Gold,"3,770",5.0,yes,Y,3.0,3.5,0
+240,35.0,Other,BANGALORE,Standard,$5706,6.0,no,N,12.0,3.4,
+241,37.0,F,Mumbai ,PREMIUM,"1,909",4.0,Yes,0,3.0,2.8,No
+242,33.0,Female,Chennai,Standard ,3634,4.0,no,Y,6.0,1.9,0
+243,61.0,,Mumbai ,basic,59,6.0,,1,24.0,3.6,
+244,59.0,Female,Mumbai,Gold,5165,2.0,yes,Yes,1.0,3.0,0
+245,43.0,female,Chennai,Basic,,2.0,Y,no,6.0,1.9,1
+246,30.0,F,Pune,Standard,21,2.0,,yes,24.0,3.9,Yes
+247,39.0,Female,Mumbai,Gold,Rs 51,5.0,N,Y,,5.0,
+248,39.0,,Mumbai,basic,$65,4.0,N,No,3.0,3.9,
+249,,female,Mumbai,Standard ,Rs 48,3.0,,yes,3.0,5.0,yes
+250,27.0,F,Chennai,Standard ,$32,6.0,1,Yes,1.0,1.5,No
+251,23.0,Male,hyderabad,Premium,₹56,3.0,No,,3.0,1.7,yes
+252,20.0,,  Delhi,Standard ,$55,1.0,1,No,24.0,2.8,
+253,54.0,male,Mumbai ,PREMIUM,Rs 4655,2.0,N,No,6.0,2.2,Yes
+254,43.0,Other,Chennai,PREMIUM,$3613,1.0,1,yes,1.0,4.1,1
+255,51.0,M,  Delhi,Premium,Rs 5896,2.0,yes,N,3.0,1.3,1
+256,29.0,Male,Pune,Premium,$24,6.0,,,1.0,2.8,no
+257,23.0,,Pune,Premium,₹78,2.0,no,Y,1.0,,No
+258,58.0,,Mumbai ,Standard ,$4234,6.0,,,12.0,2.8,Yes
+259,62.0,female,  Delhi,Gold,$20,4.0,,no,12.0,2.1,Yes
+260,17.0,F,Bangalore,Gold,$51,1.0,Y,N,1.0,1.5,Yes
+261,21.0,F,hyderabad,Gold,4032,2.0,1,yes,6.0,1.2,
+262,57.0,Male,Mumbai ,Standard,67,,,yes,6.0,1.1,0
+263,40.0,Female,Delhi,Gold,₹5368,4.0,Y,yes,6.0,3.0,No
+264,59.0,F,Chennai,basic,37,2.0,1,1,12.0,3.8,0
+265,57.0,Other,  Delhi,Standard ,22,2.0,0,0,24.0,2.8,Yes
+266,20.0,Female,Pune,Standard ,61,5.0,No,,3.0,2.5,no
+267,45.0,female,Bangalore,Standard,Rs 31,6.0,0,N,1.0,1.1,
+268,23.0,,Hyderabad,Basic,Rs 60,5.0,0,0,6.0,,no
+269,46.0,M,Bangalore,Premium,4624,4.0,No,N,,3.6,yes
+270,21.0,Male,Chennai,Standard ,Rs 2074,,1,No,24.0,4.1,Yes
+271,28.0,F,  Delhi,Standard ,₹18,3.0,N,No,3.0,4.0,no
+272,56.0,F,Chennai,Basic,₹15,3.0,No,N,1.0,2.3,yes
+273,16.0,M,Delhi,Basic,₹4647,3.0,yes,0,24.0,2.8,No
+274,64.0,Other,Mumbai ,Standard ,Rs 49,1.0,No,No,6.0,3.4,Yes
+275,61.0,Other,BANGALORE,Gold,4389,3.0,No,no,3.0,4.8,1
+276,17.0,Male,Bangalore,Premium,"4,001",6.0,no,1,1.0,2.5,Yes
+277,49.0,F,Pune,basic,$5899,4.0,No,,6.0,4.1,Yes
+278,21.0,M,Chennai,Gold,$4045,6.0,N,,6.0,1.0,
+279,62.0,Female,Hyderabad,PREMIUM,4688,5.0,no,Yes,6.0,1.2,
+280,36.0,Other,Chennai,Standard ,33,2.0,,yes,12.0,2.0,yes
+281,61.0,M,  Delhi,Standard,₹5110,4.0,Y,1,3.0,3.4,
+282,33.0,Other,Mumbai,basic,₹5597,3.0,Y,yes,1.0,3.1,0
+283,,,BANGALORE,PREMIUM,4679,2.0,yes,N,1.0,3.3,
+284,57.0,Female,Hyderabad,Standard,21,4.0,,No,24.0,3.5,1
+285,28.0,female,Hyderabad,basic,Rs 23,2.0,N,yes,3.0,1.7,Yes
+286,57.0,Female,hyderabad,Standard ,₹38,4.0,Yes,no,6.0,,yes
+287,52.0,Male,  Delhi,Gold,$5645,6.0,no,N,3.0,4.2,0
+288,34.0,female,Mumbai,PREMIUM,₹69,2.0,yes,no,1.0,3.9,Yes
+289,49.0,,Bangalore,Gold,2130,2.0,No,,24.0,3.6,yes
+290,43.0,male,Mumbai ,Premium,"3,046",3.0,0,no,24.0,1.2,1
+291,40.0,Male,Chennai,Basic,2269,4.0,Yes,N,3.0,,0
+292,18.0,male,Mumbai,Premium,Rs 3077,5.0,1,0,12.0,4.3,No
+293,19.0,F,  Delhi,basic,56,3.0,0,No,,2.1,1
+294,52.0,Female,Mumbai ,PREMIUM,Rs 5948,3.0,no,Y,1.0,1.9,yes
+295,56.0,female,BANGALORE,basic,₹4546,6.0,no,yes,12.0,4.2,1
+296,42.0,,Pune,Standard,35,6.0,N,no,3.0,3.7,no
+297,59.0,M,Bangalore,Gold,"3,928",2.0,Yes,no,3.0,5.0,yes
+298,17.0,female,Chennai,PREMIUM,,3.0,Y,Y,6.0,3.9,No
+299,45.0,,  Delhi,Standard ,₹22,4.0,0,No,12.0,4.8,No
+300,44.0,F,Delhi,Premium,3834,2.0,No,Y,3.0,1.4,Yes
+301,-31.0,,Delhi,Basic,31,5.0,No,Yes,12.0,2.9,Yes
+302,45.0,Other,Pune,Basic,$37,,yes,N,,5.0,No
+303,55.0,M,Hyderabad,PREMIUM,Rs 1863,5.0,Y,0,12.0,3.5,1
+304,33.0,Other,Delhi,basic,"3,266",4.0,no,,12.0,4.1,no
+305,49.0,,BANGALORE,PREMIUM,$28,3.0,Y,yes,3.0,,1
+306,60.0,male,Hyderabad,Gold,"3,101",2.0,N,no,1.0,2.2,Yes
+307,38.0,Male,hyderabad,PREMIUM,$69,7.0,N,yes,6.0,3.3,1
+308,52.0,female,Mumbai ,Basic,1743,3.0,yes,no,,4.3,
+309,50.0,male,Delhi,basic,,5.0,Yes,no,3.0,4.5,Yes
+310,,F,Delhi,Standard,21,6.0,Yes,Yes,24.0,1.1,0
+311,42.0,female,Mumbai,Standard,$49,,No,N,3.0,3.6,No
+312,40.0,Other,Pune,Standard ,"3,485",6.0,N,no,12.0,3.4,
+313,16.0,male,Delhi,Premium,68,2.0,1,Yes,6.0,4.8,yes
+314,21.0,F,Mumbai ,Basic,Rs 2548,2.0,N,No,24.0,1.1,yes
+315,40.0,Female,BANGALORE,basic,,2.0,no,no,24.0,3.2,yes
+316,47.0,Male,Hyderabad,basic,$5723,4.0,yes,1,3.0,2.1,no
+317,21.0,,Mumbai ,Standard ,Rs 57,4.0,yes,0,6.0,,
+318,,male,Mumbai,Basic,$3453,1.0,yes,No,6.0,4.0,Yes
+319,46.0,,Hyderabad,basic,Rs 1956,1.0,1,yes,12.0,,yes
+320,61.0,male,Bangalore,Standard,₹21,5.0,1,,1.0,3.0,No
+321,,Female,Bangalore,Gold,"3,648",4.0,0,no,12.0,4.4,No
+322,52.0,Female,Pune,Gold,$2267,3.0,0,0,,1.7,yes
+323,37.0,M,BANGALORE,basic,$69,2.0,Yes,Y,24.0,1.1,yes
+324,30.0,Male,Delhi,Gold,₹4208,2.0,No,N,24.0,1.9,no
+325,36.0,Male,Chennai,Gold,67,1.0,0,no,12.0,2.5,Yes
+326,64.0,Male,  Delhi,PREMIUM,"3,942",6.0,yes,No,24.0,3.0,no
+327,19.0,F,hyderabad,Premium,,6.0,No,1,12.0,3.6,
+328,50.0,male,BANGALORE,Standard ,₹5304,4.0,No,1,24.0,4.8,1
+329,64.0,,Hyderabad,Gold,"5,700",5.0,,1,1.0,3.8,No
+330,63.0,Female,Mumbai,PREMIUM,24,1.0,,N,12.0,4.1,yes
+331,43.0,,Hyderabad,Premium,Rs 48,6.0,1,Yes,1.0,3.5,yes
+332,,,Bangalore,Standard,,4.0,Y,Y,6.0,1.4,no
+333,59.0,F,Delhi,Standard,$3648,1.0,N,Y,6.0,3.6,1
+334,39.0,F,Chennai,Standard ,"4,211",4.0,N,Yes,3.0,2.8,No
+335,51.0,Other,Delhi,Gold,"3,174",7.0,Yes,yes,6.0,1.7,
+336,58.0,Male,Pune,Basic,Rs 3989,5.0,Y,N,3.0,1.1,1
+337,47.0,Male,hyderabad,Standard,$22,2.0,yes,0,1.0,2.5,yes
+338,18.0,male,Mumbai,Standard,,2.0,Yes,yes,,2.0,
+339,56.0,F,hyderabad,Standard,"3,716",,Yes,Yes,24.0,1.5,No
+340,42.0,Male,hyderabad,Standard,2269,7.0,Y,1,12.0,1.6,
+341,25.0,,Bangalore,Standard ,54,2.0,1,No,1.0,,0
+342,55.0,male,Bangalore,Standard ,₹36,2.0,N,Y,24.0,3.7,
+343,61.0,male,hyderabad,Premium,Rs 3660,5.0,Yes,1,,4.4,0
+344,,,Bangalore,Standard,$61,4.0,1,Yes,,2.8,1
+345,23.0,F,  Delhi,Standard ,1801,5.0,,Y,6.0,2.3,
+346,37.0,male,Mumbai,basic,36,1.0,,yes,3.0,1.4,yes
+347,36.0,F,Bangalore,basic,1782,4.0,N,Y,12.0,3.9,no
+348,58.0,Female,Pune,Premium,$3968,4.0,,Y,,3.3,
+349,44.0,F,BANGALORE,basic,$22,4.0,yes,N,1.0,4.0,No
+350,18.0,M,BANGALORE,Standard ,,,0,Y,6.0,2.6,
+351,57.0,,Mumbai,Premium,$5062,5.0,1,1,6.0,1.8,no
+352,-56.0,female,Hyderabad,Standard,"3,659",4.0,no,Yes,,4.4,0
+353,27.0,female,Bangalore,Premium,"3,756",,Y,yes,1.0,,Yes
+354,35.0,female,Chennai,Standard ,4134,6.0,0,N,,4.5,No
+355,52.0,Other,Hyderabad,Premium,Rs 2197,3.0,no,Yes,12.0,4.1,No
+356,50.0,Male,Chennai,Standard ,68,2.0,Yes,Yes,3.0,3.5,0
+357,,Female,Chennai,basic,"5,783",1.0,Y,0,12.0,3.0,No
+358,18.0,male,Chennai,Standard ,"5,931",5.0,Y,yes,,2.9,Yes
+359,45.0,male,Mumbai,Gold,Rs 2093,1.0,no,Y,6.0,3.0,No
+360,61.0,M,Hyderabad,PREMIUM,Rs 44,5.0,0,N,12.0,3.1,Yes
+361,63.0,,Delhi,Basic,₹5778,1.0,No,Y,12.0,1.3,no
+362,43.0,,Hyderabad,Basic,₹4310,5.0,Y,N,,3.6,yes
+363,32.0,Male,Hyderabad,Gold,Rs 18,5.0,N,N,6.0,3.7,1
+364,62.0,female,BANGALORE,Premium,$23,4.0,0,Y,1.0,3.3,0
+365,25.0,M,Mumbai,Premium,₹3597,5.0,yes,No,,4.3,1
+366,60.0,,Delhi,PREMIUM,4257,1.0,Yes,yes,6.0,2.7,no
+367,20.0,Male,Mumbai,Standard,₹3503,4.0,,no,24.0,3.8,0
+368,41.0,Female,Chennai,Standard ,$53,7.0,N,1,1.0,1.0,
+369,56.0,Male,Hyderabad,Standard ,74,2.0,0,0,12.0,3.6,Yes
+370,51.0,female,Bangalore,Basic,44,3.0,1,1,6.0,2.1,Yes
+371,29.0,,Mumbai,Gold,24,3.0,No,0,3.0,4.4,Yes
+372,21.0,Male,Mumbai,Gold,59,1.0,Y,,12.0,3.5,0
+373,58.0,female,Hyderabad,Gold,$2189,3.0,N,,3.0,3.9,1
+374,26.0,,Mumbai,Basic,Rs 29,7.0,Yes,N,3.0,4.3,0
+375,29.0,female,Mumbai,Basic,$5760,3.0,yes,1,6.0,3.9,1
+376,52.0,Other,hyderabad,basic,Rs 3852,,N,No,12.0,2.4,Yes
+377,56.0,Female,Pune,basic,"2,394",,yes,0,24.0,,0
+378,49.0,,  Delhi,Gold,Rs 3590,5.0,yes,yes,1.0,3.5,0
+379,61.0,Other,Chennai,PREMIUM,Rs 79,2.0,Y,1,3.0,3.7,yes
+380,17.0,Other,Mumbai ,Standard ,30,4.0,Y,,,2.2,0
+381,62.0,F,hyderabad,Premium,2110,5.0,N,yes,24.0,1.7,0
+382,19.0,female,Mumbai,Gold,$4291,7.0,1,,3.0,4.0,
+383,,Female,Hyderabad,basic,₹39,4.0,no,Y,12.0,3.2,No
+384,50.0,M,Hyderabad,Standard ,Rs 3314,5.0,,Yes,6.0,1.8,no
+385,27.0,F,  Delhi,basic,22,3.0,Yes,1,1.0,3.3,
+386,36.0,Male,Hyderabad,Standard ,56,5.0,0,no,12.0,1.7,0
+387,31.0,F,hyderabad,Standard,₹4424,3.0,yes,yes,,1.6,Yes
+388,16.0,male,Delhi,Premium,46,6.0,Yes,N,24.0,2.8,No
+389,21.0,Male,Mumbai ,Gold,$33,2.0,,N,6.0,,0
+390,61.0,M,  Delhi,Basic,Rs 5458,3.0,1,,24.0,3.7,Yes
+391,28.0,female,BANGALORE,Standard,42,,,0,6.0,1.6,
+392,42.0,Female,BANGALORE,basic,"3,060",1.0,no,Yes,12.0,4.6,yes
+393,20.0,Female,Chennai,Standard,75,6.0,Yes,,12.0,4.7,yes
+394,21.0,,Hyderabad,Standard,Rs 17,3.0,N,,3.0,2.0,Yes
+395,43.0,Male,Mumbai,Premium,Rs 5331,2.0,1,No,12.0,4.6,
+396,62.0,Other,Mumbai,Standard ,₹5933,5.0,0,N,,,Yes
+397,32.0,Female,Mumbai ,Gold,3174,4.0,1,1,12.0,4.0,no
+398,,Female,  Delhi,Basic,54,1.0,No,Yes,,4.4,Yes
+399,16.0,male,Bangalore,PREMIUM,$5330,5.0,1,1,1.0,1.9,Yes
+400,30.0,M,Chennai,Gold,67,5.0,Y,yes,12.0,4.5,
+399,16.0,male,Bangalore,PREMIUM,$5330,5.0,1,1,1.0,1.9,Yes
+126,46.0,Male,Chennai,Basic,₹50,2.0,N,1,3.0,3.3,0
+329,64.0,,Hyderabad,Gold,"5,700",5.0,,1,1.0,3.8,No
+340,42.0,Male,hyderabad,Standard,2269,7.0,Y,1,12.0,1.6,
+173,24.0,Female,BANGALORE,Premium,18,4.0,0,no,24.0,3.8,Yes
+343,61.0,male,hyderabad,Premium,Rs 3660,5.0,Yes,1,,4.4,0
+198,45.0,male,Mumbai ,Standard ,32,4.0,N,no,1.0,,Yes
+292,18.0,male,Mumbai,Premium,Rs 3077,5.0,1,0,12.0,4.3,No
+30,26.0,Female,Mumbai,Standard ,5082,2.0,Y,no,6.0,1.7,No
+285,28.0,female,Hyderabad,basic,Rs 23,2.0,N,yes,3.0,1.7,Yes
+175,49.0,male,Pune,Basic,$3122,3.0,,0,6.0,3.4,No
+373,58.0,female,Hyderabad,Gold,$2189,3.0,N,,3.0,3.9,1
+189,30.0,male,Pune,Premium,"2,128",2.0,Y,,3.0,2.7,No
+325,36.0,Male,Chennai,Gold,67,1.0,0,no,12.0,2.5,Yes
+322,52.0,Female,Pune,Gold,$2267,3.0,0,0,,1.7,yes

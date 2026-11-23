@@ -1,0 +1,77 @@
+laptop_id,model_name,release_year,price,battery_life_hrs,processor,ram_gb,storage,os,touchscreen,notes
+LAP3013,HP Envy x360,2024,"""83,403""",10.3,,8,512GB SSD,,Yes,gaming build
+LAP3022,Asus ROG Strix,2017,80755,9.4,AMD Ryzen 7,16,512GB SSD,Linux,Yes,
+LAP3047,Lenovo IdeaPad Slim 3,2023,30717 INR,7.3,AMD Ryzen 5,32,256GB SSD,Windows,No,
+LAP3067,Dell Inspiron 15,2021,131161,4.0,Intel i3,32,512GB HDD,Linux,No,gaming build
+LAP3039,Acer Swift 3,2018,₹98287,7.4,Intel i3,8,256GB SSD,,No,
+LAP3011,Lenovo Yoga Slim 7,2016,₹123626,7.3,Intel i3,32,1TB HDD,,No,great battery life
+LAP3002,HP Pavilion 14,2017,"""177,829""",,Intel i5,4,512GB HDD,macOS,No,
+LAP3017,Acer Predator Helios,2024,$920,10.4,Intel i5,4,1TB SSD,macOS,No,gaming build
+LAP3040,Dell XPS 13,2018,56695,6.6,Intel i5,4,1TB SSD,Linux,No,office use ready
+LAP3015,Lenovo Legion 5,2023,₹25500,8.9,Intel i9,8,1TB HDD,macOS,No,great battery life
+LAP3069,Lenovo IdeaPad Slim 3,2023,76731,3.5,AMD Ryzen 7,32,256GB SSD,macOS,Yes,
+LAP3016,Lenovo ThinkPad E14,2022,$47261,,AMD Ryzen 5,32,512GB SSD,,No,gaming build
+LAP3019,Dell Vostro 14,2018,64269 INR,3.6,AMD Ryzen 7,64,512GB HDD,,Yes,office use ready
+LAP3018,HP 14s,2021,₹59360,10.3,AMD Ryzen 5,32,512GB HDD,macOS,Yes,office use ready
+LAP3014,Asus Zenbook 14,2023,614 INR,11.6,Intel i9,16,1TB SSD,Windows,Yes,office use ready
+LAP3027,Lenovo Yoga Slim 7,2018,₹53692,5.8,Intel i7,64,512GB SSD,Linux,No,gaming build
+LAP3008,Acer Predator Helios,2020,$124730,8.9,Intel i3,32,512GB HDD,macOS,No,great battery life
+LAP3035,Lenovo ThinkPad E14,2024,162885 INR,5.4,AMD Ryzen 7,8,512GB SSD,,No,
+LAP3010,Lenovo IdeaPad Slim 3,2017,$74967,8.4,Intel i3,4,512GB HDD,macOS,Yes,great battery life
+LAP3070,Lenovo Yoga Slim 7,2019,,6.2,Intel i5,8,512GB SSD,Windows,Yes,great battery life
+LAP3044,Acer Predator Helios,2022,44705 INR,6.0,,32,1TB HDD,macOS,Yes,gaming build
+LAP3051,Dell XPS 13,2016,3545032 INR,6.8,Intel i7,8,1TB HDD,Windows,No,
+LAP3034,Dell Inspiron 15,2016,52503 INR,8.6,AMD Ryzen 7,8,1TB HDD,Linux,Yes,
+LAP3050,Lenovo Legion 5,2016,₹3132335,11.0,Intel i9,64,512GB SSD,macOS,Yes,
+LAP3046,HP Envy x360,2021,$175544,10.1,,8,256GB SSD,Linux,Yes,
+LAP3020,Lenovo Legion 5,2019,158094,7.0,AMD Ryzen 5,64,512GB HDD,macOS,No,
+LAP3064,Lenovo Yoga Slim 7,2020,"""26,661""",3.3,Intel i7,8,256GB SSD,macOS,No,office use ready
+LAP3066,Lenovo IdeaPad Slim 3,2024,₹67910,5.8,Intel i3,16,512GB HDD,Linux,No,
+LAP3059,Lenovo Yoga Slim 7,2019,"""119,859""",9.8,Intel i5,32,256GB SSD,Windows,No,great battery life
+LAP3056,HP Pavilion 14,2023,₹142007,8.7,Intel i5,32,256GB SSD,,Yes,
+LAP3037,HP Pavilion 14,2023,₹82067,7.2,,4,512GB HDD,macOS,No,office use ready
+LAP3025,HP Pavilion 14,2018,₹135691,7.6,Intel i9,16,256GB SSD,Linux,Yes,gaming build
+LAP3036,Lenovo ThinkPad E14,2023,$37254,5.3,AMD Ryzen 7,16,512GB HDD,macOS,Yes,
+LAP3004,Asus ROG Strix,2023,$103582,8.2,AMD Ryzen 5,32,1TB SSD,,No,office use ready
+LAP3038,MSI Katana GF66,2016,157807 INR,11.2,Intel i5,4,512GB HDD,Windows,Yes,great battery life
+LAP3042,Asus Zenbook 14,2021,137131 INR,7.9,AMD Ryzen 7,4,256GB SSD,,No,gaming build
+LAP3021,Asus Zenbook 14,2024,₹89921,4.8,Intel i9,8,1TB HDD,Windows,No,
+LAP3045,Lenovo ThinkPad E14,2018,"""87,685""",,,32,1TB HDD,,Yes,
+LAP3061,Lenovo Yoga Slim 7,2019,₹56762,6.4,AMD Ryzen 7,16,512GB SSD,,Yes,gaming build
+LAP3041,Lenovo IdeaPad Slim 3,2022,₹119557,3.5,AMD Ryzen 7,16,512GB SSD,macOS,No,
+LAP3067,Dell Inspiron 15,2021,131161,4.0,Intel i3,32,512GB HDD,Linux,No,gaming build
+LAP3043,Dell XPS 13,2023,58373 INR,9.7,AMD Ryzen 7,16,1TB HDD,macOS,No,
+LAP3033,MSI Katana GF66,2018,,8.6,AMD Ryzen 7,64,512GB SSD,Windows,Yes,office use ready
+LAP3062,Lenovo Legion 5,2019,176592,7.6,Intel i5,4,1TB HDD,Windows,Yes,office use ready
+LAP3006,Lenovo ThinkPad E14,2017,₹42039,10.4,Intel i7,32,1TB SSD,Windows,No,great battery life
+LAP3024,Acer Predator Helios,2023,₹1857,11.9,,8,256GB SSD,Windows,No,great battery life
+LAP3028,HP Envy x360,2021,,4.7,Intel i9,8,1TB HDD,Windows,No,
+LAP3068,Acer Aspire 7,2016,"""128,997""",4.5,Intel i7,16,512GB SSD,macOS,Yes,office use ready
+LAP3009,Dell Inspiron 15,2018,$173462,8.6,AMD Ryzen 7,4,1TB HDD,,No,
+LAP3005,Asus VivoBook 15,2024,64841 INR,9.9,AMD Ryzen 5,16,1TB SSD,Linux,No,
+LAP3007,Apple MacBook Air,2017,$100348,7.5,Intel i5,32,1TB HDD,Linux,Yes,
+LAP3026,HP Omen 15,2017,862,5.4,Intel i3,32,256GB SSD,Linux,No,great battery life
+LAP3031,Acer Swift 3,2021,,4.6,Intel i7,32,256GB SSD,,No,gaming build
+LAP3052,Acer Swift 3,2022,157350 INR,10.4,Intel i5,32,512GB SSD,Linux,No,office use ready
+LAP3012,Lenovo ThinkPad E14,2018,$94404,11.6,Intel i7,8,512GB HDD,Windows,No,office use ready
+LAP3054,HP Pavilion 14,2018,107365,4.7,AMD Ryzen 5,32,256GB SSD,Linux,No,great battery life
+LAP3030,Lenovo ThinkPad E14,2020,₹124845,3.4,Intel i5,8,1TB SSD,,Yes,great battery life
+LAP3053,Lenovo Yoga Slim 7,2023,152153,6.5,Intel i5,4,512GB HDD,macOS,No,office use ready
+LAP3059,Lenovo Yoga Slim 7,2019,"""119,859""",9.8,Intel i5,32,256GB SSD,Windows,No,great battery life
+LAP3040,Dell XPS 13,2018,56695,6.6,Intel i5,4,1TB SSD,Linux,No,office use ready
+LAP3049,Lenovo Legion 5,2016,"""58,545""",4.0,Intel i3,16,512GB HDD,macOS,No,great battery life
+LAP3029,Acer Predator Helios,2022,₹81408,9.6,Intel i5,32,1TB SSD,Windows,Yes,office use ready
+LAP3016,Lenovo ThinkPad E14,2022,$47261,,AMD Ryzen 5,32,512GB SSD,,No,gaming build
+LAP3060,Apple MacBook Air,2022,$94439,9.4,Intel i9,8,512GB SSD,macOS,No,
+LAP3063,MSI Katana GF66,2019,$35580,11.8,AMD Ryzen 5,8,256GB SSD,Linux,Yes,
+LAP3001,Asus ROG Strix,2018,"""165,478""",3.3,Intel i9,32,256GB SSD,macOS,Yes,
+LAP3003,Acer Aspire 7,2024,"""72,376""",7.9,Intel i3,64,256GB SSD,macOS,No,
+LAP3023,Lenovo Legion 5,2017,83644 INR,6.8,Intel i7,16,256GB SSD,Linux,Yes,great battery life
+LAP3057,Lenovo ThinkPad E14,2016,₹113885,5.4,AMD Ryzen 7,16,1TB SSD,Linux,Yes,office use ready
+LAP3065,Lenovo Yoga Slim 7,2019,$132215,3.3,Intel i9,64,1TB HDD,Windows,No,office use ready
+LAP3058,Dell Inspiron 15,2019,147091 INR,10.3,Intel i5,32,512GB SSD,Windows,No,gaming build
+LAP3048,Dell Vostro 14,2019,64863,8.8,,32,256GB SSD,Windows,Yes,gaming build
+LAP3050,Lenovo Legion 5,2016,₹3132335,11.0,Intel i9,64,512GB SSD,macOS,Yes,
+LAP3055,Asus ROG Strix,2023,1646 INR,11.7,Intel i5,32,1TB SSD,Linux,No,office use ready
+LAP3032,Lenovo Legion 5,2024,"""48,528""",,Intel i7,8,256GB SSD,macOS,No,great battery life
+LAP3054,HP Pavilion 14,2018,107365,4.7,AMD Ryzen 5,32,256GB SSD,Linux,No,great battery life

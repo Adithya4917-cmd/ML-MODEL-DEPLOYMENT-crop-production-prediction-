@@ -1,0 +1,76 @@
+car_id,name,year,selling_price,km_driven,fuel,seller_type,transmission,owner,notes
+CAR1032,Volkswagen Polo GT,2020,714379 INR,50290.0,CNG,Individual,Manual,First Owner,showroom serviced
+CAR1036,Maruti 800 AC,2011,%469331,48141.0,Diesel,Dealer,Manual,First Owner,good condition
+CAR1001,Toyota Innova 2.5,2010,%381458,137164.0,Diesel,Individual,Manual,Second Owner,
+CAR1018,Toyota Innova 2.5,2019,$687035,93754.0,Diesel,Individual,Manual,First Owner,showroom serviced
+CAR1027,Hyundai Verna 1.6 SX,2019,689804,60432.0,,Individual,Automatic,Second Owner,single owner
+CAR1066,Mahindra XUV500 W8,2006,303008,9730.0,Petrol,Dealer,Manual,Second Owner,
+CAR1069,Maruti Alto LXI,2006,258274,54861.0,Petrol,Individual,Manual,Second Owner,single owner
+CAR1030,Honda City VX,2006,222837,76465.0,Petrol,Trustmark Dealer,Manual,Second Owner,
+CAR1046,Renault Duster RXL,2013,$531580,30566.0,Petrol,Dealer,Manual,First Owner,showroom serviced
+CAR1053,Volkswagen Polo GT,2020,"754,939",75512.0,CNG,Trustmark Dealer,Manual,Fourth & Above Owner,good condition
+CAR1035,Toyota Etios VX,2007,270667,69752.0,Petrol,Dealer,Manual,Second Owner,showroom serviced
+CAR1061,Maruti Swift VDI,2012,520474,66862.0,Diesel,Trustmark Dealer,Manual,Third Owner,showroom serviced
+CAR1050,Skoda Rapid Elegance,2013,%436507,135400.0,Petrol,Trustmark Dealer,Manual,Second Owner,single owner
+CAR1010,Mahindra XUV500 W8,2018,,142076.0,Diesel,Dealer,Automatic,First Owner,good condition
+CAR1025,Maruti Wagon R LXI,2012,593497,31570.0,Diesel,Trustmark Dealer,Manual,Second Owner,
+CAR1059,Maruti 800 AC,2010,404934 INR,122881.0,Diesel,Trustmark Dealer,Manual,Second Owner,
+CAR1029,Renault Duster RXL,2007,343434,131322.0,Diesel,Trustmark Dealer,Manual,First Owner,
+CAR1062,Datsun RediGO T,2020,"616,669",148764.0,Petrol,Individual,Manual,,good condition
+CAR1011,Honda Amaze VX,2016,629802,69262.0,Petrol,Individual,Automatic,Second Owner,good condition
+CAR1000,Renault Duster RXL,2008,$320830,54689.0,Petrol,Trustmark Dealer,Manual,First Owner,
+CAR1041,Hyundai Verna 1.6 SX,2015,$589041,42393.0,,Dealer,Manual,First Owner,showroom serviced
+CAR1014,Chevrolet Beat LT,2010,%465041,30490.0,Diesel,Trustmark Dealer,Manual,First Owner,
+CAR1028,Datsun RediGO T,2013,$527257,77732.0,Petrol,Individual,Manual,Second Owner,showroom serviced
+CAR1027,Hyundai Verna 1.6 SX,2019,689804,60432.0,,Individual,Automatic,Second Owner,single owner
+CAR1021,Skoda Rapid Elegance,2009,342562 INR,,Diesel,Dealer,Manual,Second Owner,single owner
+CAR1045,Nissan Micra XV,2005,245489,75573.0,Petrol,Trustmark Dealer,Manual,First Owner,single owner
+CAR1026,Volkswagen Polo GT,2006,%324575,64587.0,Petrol,Individual,Automatic,First Owner,single owner
+CAR1017,Tata Indica V2,2015,536392,22192.0,LPG,Individual,Manual,First Owner,
+CAR1023,Toyota Etios VX,2013,$403045,135720.0,Petrol,Individual,Manual,Third Owner,showroom serviced
+CAR1048,Maruti 800 AC,2007,309234,89612.0,Diesel,Dealer,Manual,First Owner,good condition
+CAR1013,Hyundai Creta 1.6,2004,,147303.0,Petrol,Individual,Manual,First Owner,single owner
+CAR1009,Renault Duster RXL,2009,$335401,91045.0,Petrol,Dealer,Manual,First Owner,showroom serviced
+CAR1068,Maruti Wagon R LXI,2014,"487,985",147975.0,Diesel,Dealer,Manual,Second Owner,good condition
+CAR1008,Toyota Innova 2.5,2007,284947,24869.0,Petrol,Individual,Manual,Second Owner,single owner
+CAR1054,Toyota Innova 2.5,2004,$198567,94560.0,Petrol,Individual,Manual,First Owner,good condition
+CAR1065,Ford Figo Titanium,2010,368081,78227.0,Petrol,Dealer,Manual,Third Owner,showroom serviced
+CAR1044,Hyundai Verna 1.6 SX,2016,608444,53481.0,CNG,Trustmark Dealer,Automatic,First Owner,
+CAR1012,Maruti Alto LXI,2016,593484 INR,90869.0,Petrol,Individual,Manual,First Owner,showroom serviced
+CAR1016,Toyota Innova 2.5,2019,690697,106586.0,Diesel,Trustmark Dealer,Manual,First Owner,
+CAR1002,Maruti Alto LXI,2009,335218 INR,107200.0,CNG,Individual,Manual,,good condition
+CAR1067,Maruti Alto LXI,2012,534075,57152.0,Petrol,Individual,Automatic,First Owner,single owner
+CAR1019,Volkswagen Polo GT,2018,609005,58100.0,Petrol,Dealer,Manual,First Owner,
+CAR1064,Hyundai Creta 1.6,2020,$853450,37905.0,Petrol,Individual,Automatic,First Owner,
+CAR1006,Datsun RediGO T,2015,$527894,133954.0,Petrol,Dealer,Manual,Second Owner,
+CAR1055,Maruti 800 AC,2016,437676,124568.0,Petrol,Individual,Manual,First Owner,
+CAR1024,Honda Amaze VX,2012,471797,127605.0,Diesel,Trustmark Dealer,Manual,First Owner,good condition
+CAR1005,Honda Amaze VX,2005,$163438,125094.0,LPG,Dealer,Manual,First Owner,single owner
+CAR1057,Maruti Wagon R LXI,2018,685999,21194.0,,Individual,Manual,First Owner,
+CAR1033,Hyundai i20 Sportz,2017,737107,66272.0,Diesel,Dealer,Automatic,Second Owner,
+CAR1054,Toyota Innova 2.5,2004,$198567,94560.0,Petrol,Individual,Manual,First Owner,good condition
+CAR1056,Honda City VX,2004,220024,146912.0,Diesel,Trustmark Dealer,Manual,First Owner,good condition
+CAR1058,Maruti Swift VDI,2011,365352,47733.0,Petrol,Individual,Manual,First Owner,single owner
+CAR1051,Toyota Etios VX,2015,606766,,Diesel,Trustmark Dealer,Manual,First Owner,good condition
+CAR1065,Ford Figo Titanium,2010,368081,78227.0,Petrol,Dealer,Manual,Third Owner,showroom serviced
+CAR1042,Hyundai Creta 1.6,2009,$373083,12911.0,Petrol,Individual,Manual,,showroom serviced
+CAR1004,Tata Indica V2,2007,%207557,149832.0,Diesel,Individual,Manual,,showroom serviced
+CAR1038,Maruti 800 AC,2013,%448513,39566.0,Petrol,Dealer,Manual,Third Owner,
+CAR1003,Datsun RediGO T,2007,261246 INR,34616.0,Petrol,Individual,Manual,Second Owner,single owner
+CAR1039,Renault Duster RXL,2017,%599906,62089.0,Petrol,Trustmark Dealer,Manual,Third Owner,
+CAR1037,Honda Amaze VX,2004,143460,149191.0,Petrol,Individual,Manual,Second Owner,
+CAR1052,Tata Indica V2,2018,$678209,68478.0,Diesel,Individual,Automatic,Second Owner,
+CAR1060,Hyundai Verna 1.6 SX,2011,485394,9255.0,CNG,Individual,Manual,Second Owner,showroom serviced
+CAR1020,Maruti Wagon R LXI,2019,$583558,,Diesel,Individual,Manual,First Owner,good condition
+CAR1026,Volkswagen Polo GT,2006,%324575,64587.0,Petrol,Individual,Automatic,First Owner,single owner
+CAR1031,Mahindra XUV500 W8,2012,484496 INR,96997.0,Diesel,Individual,Manual,Second Owner,
+CAR1063,Toyota Innova 2.5,2018,568798,102808.0,Petrol,Individual,Manual,First Owner,good condition
+CAR1047,Toyota Innova 2.5,2020,%647863,114328.0,Petrol,Dealer,Manual,Fourth & Above Owner,
+CAR1049,Mahindra XUV500 W8,2011,504727,19823.0,Diesel,Dealer,Manual,First Owner,showroom serviced
+CAR1034,Honda Amaze VX,2006,347792,29669.0,Petrol,Dealer,Manual,Second Owner,
+CAR1007,Renault Duster RXL,2007,"446,909",47800.0,Diesel,Individual,Automatic,Fourth & Above Owner,single owner
+CAR1043,Maruti Wagon R LXI,2004,"239,205",110382.0,Diesel,Dealer,Manual,Second Owner,showroom serviced
+CAR1022,Maruti Alto LXI,2020,%631856,116086.0,Petrol,Individual,Manual,Second Owner,good condition
+CAR1066,Mahindra XUV500 W8,2006,303008,9730.0,Petrol,Dealer,Manual,Second Owner,
+CAR1015,Hyundai Creta 1.6,2014,$393079,140324.0,Petrol,Dealer,Manual,First Owner,
+CAR1040,Toyota Etios VX,2007,297673 INR,71766.0,Petrol,Individual,Manual,First Owner,showroom serviced
