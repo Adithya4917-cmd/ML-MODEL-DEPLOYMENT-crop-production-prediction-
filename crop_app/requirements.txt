@@ -2,12 +2,11 @@ fastapi
 uvicorn
 python-multipart
 pandas
-numpy
+numpy==2.4.4
 joblib
 scikit-learn==1.9.0
 pytest
 httpx
-
 
 syntax to deploy  the ml model 
     python -m uvicorn src.app:app --reload  (in vs code terminal)

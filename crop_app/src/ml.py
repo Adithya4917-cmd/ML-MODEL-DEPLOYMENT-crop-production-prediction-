@@ -18,7 +18,7 @@ NUM_COLS = ["year", "log_area", "temp_change_annual_c", "temp_change_djf_c",
 INPUT_COLS = ["country", "crop", "year", "area_harvested_ha",
               "temp_change_annual_c", "temp_change_djf_c", "temp_change_mam_c",
               "temp_change_jja_c", "temp_change_son_c"]
-n
+
 # crops / countries the model was trained on (read from the saved column names)
 KNOWN_CROPS     = sorted(c[len("crop_"):] for c in columns if c.startswith("crop_"))
 KNOWN_COUNTRIES = sorted(c[len("country_"):] for c in columns if c.startswith("country_"))
